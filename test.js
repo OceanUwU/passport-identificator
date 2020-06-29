@@ -19,15 +19,18 @@ passport.use(new IdentificatorStrategy(
     },
 
     async (profile, cb) => {
+        console.log("authenticating:", profile);
         return cb(null, profile.id);
     }
 ));
 
 passport.serializeUser(async function(profile, cb) {
-    return cb(null, profile.id);
+    console.log("serializing:", profile);
+    return cb(null, profile);
 });
 
 passport.deserializeUser(async function(id, cb) {
+    console.log("deserializing:", id);
     IdentificatorStrategy.loadUserProfile(identificatorHost, id, cb);
 });
 
