@@ -12,5 +12,16 @@
     "node-fetch": "^2.6.0",
     "passport": "^0.4.1",
     "passport-strategy": "^1.0.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/975miles/passport-identificator.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/975miles/passport-identificator/issues"
+  },
+  "homepage": "https://github.com/975miles/passport-identificator#readme"
 }
